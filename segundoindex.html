@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo das Palavras</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+</head>
+<body>
+    <div class="top-right-buttons">
+        <a href="primeiroindex.html">LOGIN</a>
+        <a href="index2.html">bott</a>
+        <a href="index3.html">DADOS</a>
+    </div>
+    <div class="container">
+        <div class="game-area">
+            <h1>Jogo de Sílabas</h1>
+            <div class="image-container">
+                <img id="word-image" src="image.jpg" alt="Imagem">
+            </div>
+            <div class="selected-syllables" id="selected-syllables"></div>
+            <div class="syllables-container" id="syllables-container">
+                <!-- Sílabas serão geradas aqui dinamicamente -->
+            </div>
+            <div class="button-container">
+                <button class="button" onclick="correctSyllable()">CORRIGIR SILABA</button>
+                <button class="button verify-button" onclick="checkWord()">VERIFICAR</button>
+                <button class="button" onclick="nextWord()">PROXIMA PALAVRA</button>
+            </div>
+            <div class="stats" id="stats">
+                Acertos: <span id="correct-count">0</span> | Erros: <span id="wrong-count">0</span>
+            </div>
+            <div class="result" id="result"></div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+</body>
+</html>

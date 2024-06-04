@@ -1,0 +1,133 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('fundoverd.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+
+/* Estilos da área do jogo */
+.game-area {
+    background-color: #f9f9f9; /* Cor de fundo da área do jogo */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Sombra ao redor da área do jogo */
+    text-align: center;
+}
+
+/* Estilos da imagem da palavra */
+.image-container img {
+    max-width: 300px;
+    max-height: 300px;
+    margin-bottom: 20px;
+}
+
+/* Estilos do contêiner de sílabas */
+.syllables-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Estilos das sílabas */
+.syllable {
+    padding: 10px;
+    margin: 5px;
+    background-color: #daba09; /* Cor de fundo das sílabas */
+    color: #fff; /* Cor do texto das sílabas */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra das sílabas */
+}
+
+.syllable:hover {
+    background-color: #04792b; /* Cor de fundo das sílabas ao passar o mouse */
+}
+
+/* Estilo das sílabas selecionadas */
+.selected {
+    background-color: #028329ce; /* Cor diferente para sílabas selecionadas */
+    color: #ffffff; /* Cor do texto das sílabas selecionadas */
+}
+
+/* Estilos das sílabas selecionadas */
+.selected-syllables {
+    margin-top: 20px;
+    font-weight: bold; /* Texto em negrito */
+}
+
+/* Estilos dos botões */
+.button {
+    padding: 10px 20px;
+    margin: 0 5px;
+    background-color: #028329ce; /* Cor de fundo dos botões */
+    color: #fff; /* Cor do texto dos botões */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Estilo específico para o botão "Verificar" */
+.verify-button {
+    background-color: #daba09; /* Cor vermelha */
+    animation: blinking 1s infinite; /* Animação para piscar */
+}
+
+@keyframes blinking {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+.button:hover {
+    background-color: #daba09; /* Cor de fundo dos botões ao passar o mouse */
+}
+
+/* Estilos das estatísticas */
+.stats {
+    margin-top: 20px;
+    font-size: 1.2em; /* Tamanho da fonte */
+}
+
+/* Estilos do resultado */
+.result {
+    margin-top: 20px;
+    font-weight: bold; /* Texto em negrito */
+    font-size: 1.5em; /* Tamanho da fonte */
+}
+
+/* Estilos dos botões no canto superior direito */
+.top-right-buttons {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 999; /* Garante que os botões estejam acima do conteúdo */
+}
+
+.top-right-buttons a {
+    margin-left: 10px;
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Cor de fundo dos botões */
+    color: white; /* Cor do texto dos botões */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.top-right-buttons a:hover {
+    background-color: #45a049; /* Cor de fundo dos botões ao passar o mouse */
+}

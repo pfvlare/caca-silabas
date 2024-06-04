@@ -1,0 +1,94 @@
+body {
+    background-image: url("loginn.jpg"); /* Define uma imagem de fundo */
+    background-size: cover; /* Ajusta a imagem para cobrir toda a tela */
+    background-repeat: no-repeat; /* Evita a repetição da imagem */
+    background-position: center; /* Centraliza a imagem */
+    background-attachment: fixed; /* Mantém o fundo fixo enquanto o conteúdo rola */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form {
+    background-color: #ffffff9d;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.input-field {
+    margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.submit-button {
+    text-align: center; /* Centraliza o link dentro da div */
+    margin-top: 20px; /* Adiciona margem acima do link */
+}
+
+.submit-button a {
+    display: inline-block; /* Permite a adição de padding */
+    padding: 10px 20px; /* Adiciona espaçamento interno ao link */
+    background-color: #daba09; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    text-decoration: none; /* Remove o sublinhado do link */
+    border-radius: 5px; /* Arredonda os cantos do botão */
+    font-size: 16px; /* Tamanho da fonte */
+    transition: background-color 0.3s ease; /* Adiciona uma transição suave para mudanças de cor */
+}
+
+.submit-button a:hover {
+    background-color: #0056b3; /* Muda a cor de fundo ao passar o mouse */
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.bottom-text {
+    margin-top: 20px;
+}
+
+.bottom-text p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.bottom-text a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.bottom-text a:hover {
+    text-decoration: underline;
+}

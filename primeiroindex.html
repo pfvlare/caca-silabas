@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="dex.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Formulário de login -->
+        <form id="login-form" class="form">
+            <h2>Login</h2>
+            <div class="input-field">
+                <input type="email" placeholder="Email" required>
+            </div>
+            <div class="input-field">
+                <input type="password" placeholder="Senha" required>
+            </div>
+            <div class="submit-button">
+                <a href="segundoindex.html">ENTRAR</a>
+                <!-- <button type="submit">Entrar</button>  depois vee -->  
+            </div>
+            <div class="bottom-text">
+                <p>Não tem uma conta? <a href="#" id="register-link">Registre-se aqui</a></p>
+            </div>
+        </form>
+
+        <!-- Formulário de registro (inicialmente oculto) -->
+        <form id="register-form" class="form" style="display: none;">
+            <h2>Registro</h2>
+            <div class="input-field">
+                <input type="text" placeholder="Nome" required>
+            </div>
+            <div class="input-field">
+                <input type="email" placeholder="Email" required>
+            </div>
+            <div class="input-field">
+                <input type="password" placeholder="Senha" required>
+            </div>
+            <div class="input-field">
+                <input type="password" placeholder="Confirmar Senha" required>
+            </div>
+            <div class="submit-button">
+                <button type="submit">Registrar</button>
+            </div>
+            <div class="bottom-text">
+                <p>Já tem uma conta? <a href="#" id="login-link">Faça login aqui</a></p>
+            </div>
+        </form>
+    </div>
+
+    <script src="1script.js"></script>
+</body>
+</html>
