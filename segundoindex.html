@@ -1,40 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Metadados -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jogo das Palavras</title>
+    
+    <!-- Estilos CSS -->
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
 </head>
 <body>
+    
+    <!-- Botões no canto superior direito -->
     <div class="top-right-buttons">
-        <a href="primeiroindex.html">LOGIN</a>
-        <a href="index2.html">bott</a>
-        <a href="index3.html">DADOS</a>
+        <a href="segundoindex.html">inicio</a>
     </div>
+
+    <!-- Container principal -->
     <div class="container">
+        <!-- Área do jogo -->
         <div class="game-area">
+            <!-- Título do jogo -->
             <h1>Jogo de Sílabas</h1>
+
+            <!-- Contêiner da imagem da palavra -->
             <div class="image-container">
                 <img id="word-image" src="image.jpg" alt="Imagem">
             </div>
+
+            <!-- Div para exibir as sílabas selecionadas -->
             <div class="selected-syllables" id="selected-syllables"></div>
+
+            <!-- Contêiner para as sílabas -->
             <div class="syllables-container" id="syllables-container">
                 <!-- Sílabas serão geradas aqui dinamicamente -->
             </div>
+
+            <!-- Contêiner dos botões -->
             <div class="button-container">
+                <button class="button" onclick="previousWord()">PALAVRA ANTERIOR</button>
                 <button class="button" onclick="correctSyllable()">CORRIGIR SILABA</button>
-                <button class="button verify-button" onclick="checkWord()">VERIFICAR</button>
                 <button class="button" onclick="nextWord()">PROXIMA PALAVRA</button>
             </div>
+            <div class="button2-container"> 
+                <button class="button verify-button" onclick="checkWord()">VERIFICAR</button>
+            </div>
+            <div id="timer">Tempo pra completa a fase 2 :15s </div>
+
+            <!-- Estatísticas -->
             <div class="stats" id="stats">
                 Acertos: <span id="correct-count">0</span> | Erros: <span id="wrong-count">0</span>
             </div>
+
+            <!-- Resultado -->
             <div class="result" id="result"></div>
         </div>
     </div>
+
+    <!-- Script para exibir alertas -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+    <!-- Script JavaScript -->
     <script src="script.js"></script>
 </body>
 </html>
