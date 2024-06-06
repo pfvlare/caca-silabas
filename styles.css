@@ -119,7 +119,7 @@ body {
 .top-right-buttons a {
     margin-left: 10px;
     padding: 10px 20px;
-    background-color: #4CAF50; /* Cor de fundo dos botões */
+    background-color: #028329ce; /* Cor de fundo dos botões */
     color: white; /* Cor do texto dos botões */
     border: none;
     border-radius: 5px;
@@ -130,4 +130,11 @@ body {
 
 .top-right-buttons a:hover {
     background-color: #45a049; /* Cor de fundo dos botões ao passar o mouse */
+}
+
+#timer {
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: rgb(5, 0, 0);
 }
