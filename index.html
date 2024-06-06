@@ -1,87 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="dex.css">
-    <script src="https://accounts.google.com/gsi/client" async defer></script> <!-- Google Sign-In -->
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!-- SweetAlert2 -->
+    <link rel="stylesheet" href="1style.css"> <!-- Importa o arquivo CSS -->
+    <title>Document</title>
 </head>
 <body>
-    <div class="container" style="display: none;"> <!-- Inicialmente escondemos o conteúdo -->
-        <!-- Formulário de login -->
-        <form id="login-form" class="form">
-            <h2>Login</h2>
-            <div class="input-field">
-                <input type="email" placeholder="Email" required>
-            </div>
-            <div class="input-field">
-                <input type="password" placeholder="Senha" required>
-            </div>
-            <div class="submit-button">
-                <a href="segundoindex.html">ENTRAR</a>
-            </div>
-            <div class="submit-button">
-                <div id="g_id_onload"
-                     data-client_id="YOUR_GOOGLE_CLIENT_ID"
-                     data-callback="handleCredentialResponse">
-                </div>
-                <div class="g_id_signin" data-type="standard"></div>
-            </div>
-            <div class="bottom-text">
-                <p>Não tem uma conta? <a href="#" id="register-link">Registre-se aqui</a></p>
-            </div>
-        </form>
-
-        <!-- Formulário de registro (inicialmente oculto) -->
-        <form id="register-form" class="form" style="display: none;">
-            <h2>Registro</h2>
-            <div class="input-field">
-                <input type="text" placeholder="Nome" required>
-            </div>
-            <div class="input-field">
-                <input type="email" placeholder="Email" required>
-            </div>
-            <div class="input-field">
-                <input type="password" placeholder="Senha" required>
-            </div>
-            <div class="input-field">
-                <input type="password" placeholder="Confirmar Senha" required>
-            </div>
-            <div class="submit-button">
-                <button type="submit">Registrar</button>
-            </div>
-            <div class="bottom-text">
-                <p>Já tem uma conta? <a href="#" id="login-link">Faça login aqui</a></p>
-            </div>
-        </form>
+    <!-- Card Container -->
+    <div class="card">
+        <!-- Container da Imagem -->
+        <div class="img-box">
+            <img src="image.png"> <!-- Imagem do jogo -->
+        </div>
+        <!-- Container do Conteúdo -->
+        <div class="content">
+            <h2>Bem Vindo !!!</h2> <!-- Título de boas-vindas -->
+            <h1> jogo caça Sílabas!</h1> <!-- Título principal -->
+            <p>
+                Você está pronto para uma aventura cheia de desafios linguísticos? Este é o Jogo Caça Sílabas, 
+                onde sua habilidade em formar palavras será testada. 
+                Clique nas sílabas para formar a palavra correta e desvendar imagens divertidas.
+                Vamos começar essa jornada rumo à diversão e aprendizado!
+            </p>
+            <a href="segundoindex.html" class="read-more"> 
+                Vamos Começar <!-- Botão para ler mais, link fictício "#" -->
+            </a>
+        </div>
     </div>
-
-    <script src="1script.js"></script>
-    <script>
-        function handleCredentialResponse(response) {
-            console.log("Encoded JWT ID token: " + response.credential);
-            // Envie o token JWT para o seu servidor para validação e login.
-        }
-
-        document.addEventListener('DOMContentLoaded', function() {
-            Swal.fire({
-                title: 'Jogo da Sílabas',
-                text: 'Vamos para o login !',
-                imageUrl: 'aletlogin.gif', 
-                imageWidth: 500, // Largura da imagem
-                imageHeight: 300, // Altura da imagem
-                imageAlt: 'Imagem de Alerta',
-                confirmButtonText: 'OK'
-            }).then((result) => {
-                if (result.isConfirmed) {
-                    document.querySelector('.container').style.display = 'flex';
-                }
-            });
-        });
-    </script>
 </body>
 </html>
-
- <!--claudio linhares criador  -->
