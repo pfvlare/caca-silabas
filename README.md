@@ -50,5 +50,4 @@ Ele ajuda os pequenos a **reconhecer palavras por imagens** e **formar suas síl
 1. Clone o repositório:
 
 ```bash
-git clone https://github.com/seu-usuario/ca-a-s-labas.git
-cd ca-a-s-labas
+git clone https://github.com/pfvlare/caca-silabas.git
